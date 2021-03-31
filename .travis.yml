@@ -1,0 +1,11 @@
+language:
+  - node_js
+node_js:
+  - "12.18.3"
+
+# whitelist
+branches:
+  only:
+    - master
+    - simplification
+

@@ -14,13 +14,17 @@ branches:
 
 before_deploy:
   - npm run build
-  - echo -e "node_modules\npackage-lock.json" > .gitignore
+  - echo -e "node_modules\package-lock.json" > .gitignore
+
+
+
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
+  local-dir: build
   on:
     branch: master
 

@@ -12,3 +12,24 @@ branches:
     - master
     - simplification
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 356a6e750ebf353b440160f442b0316e56241998 # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  target-branch: master
+  committer-from-gh: true
+  local-dir: build
+  on:
+    branch: master
+
+
+
+
+
+
+
+
+
+ 
+

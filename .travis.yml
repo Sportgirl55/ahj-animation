@@ -1,0 +1,23 @@
+language:
+  - node_js
+node_js:
+  - "12.18.3"
+cashe:
+  directories:
+    - node_modules
+
+# whitelist
+branches:
+  only:
+    - master
+    - simplification
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+
+
